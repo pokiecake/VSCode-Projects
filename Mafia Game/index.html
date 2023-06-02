@@ -1,0 +1,53 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mafia - Tony's version</title>
+    <link href='index.css' rel='stylesheet'>
+  </head>
+  <body>
+    <header>
+      <h1>Single Player Mafia</h1>
+    </header>
+    <main>
+      <section id = "start">
+        <button id = "startButton">Start</button>
+      </section>
+      <section id = "selection" class = "hidden">
+        <label>Enter your first name</label>
+        <input id = "firstName" type = "text" value = "John" required>
+        <label>Enter your last name</label>
+        <input id = "lastName" type = "text" value = "Doe" required>
+        <label>Choose the role you want to be</label>
+        <select id = "selectRole">
+          <option>Mafia</option>
+          <option>Sheriff</option>
+        </select>
+        <button id = "selectionButton">Go to game</button>
+      </section>
+      <section id = "game" class = "hidden">
+        <div id = "playerInfo">
+          <p id = "playerNameDisplay"></p>
+          <p id = "playerRoleDisplay"></p>
+          <p id = "dayCount"></p>
+          <p id = "messages"></p>
+        </div>
+        <div id = "playersDisplay">
+          
+        </div>
+        <div id = "options">
+          <button id = "accuse">Accuse</button>
+          <button id = "support">Support</button>
+          <button id = "abstain">Abstain</button>
+          <button id = "advance">Advance</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src='index.js'></script>
+  </body>
+</html>

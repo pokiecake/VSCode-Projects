@@ -1,0 +1,39 @@
+.hidden{
+    display:none;
+  }
+  
+  #selection{
+    flex-direction:column;
+  }
+  
+  #playerInfo {
+    background-color:red;
+    border: 2px solid black;
+    padding-left:5px;
+  }
+  
+  #playersDisplay {
+    margin-top:5px;
+    background-color:green;
+    border: 2px solid black;
+  }
+  
+  #playersDisplay p {
+    padding-left:5px;
+  }
+  
+  #game {
+    background-color:blue;
+    border: 2px solid yellow;
+    padding: 10px;
+  }
+  
+  #options {
+    display:flex;
+    justify-content:space-around;
+    margin-top:10px;
+  }
+
+.role {
+    opacity: 100;
+}
