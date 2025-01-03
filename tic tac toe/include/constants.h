@@ -1,11 +1,15 @@
 #ifndef CONSTANTS
 #define CONSTANTS
 
-const int SIZE = 3;
-const int NUM_CELLS = SIZE * SIZE;
-const int NUM_WIN = 3;
-const char p1Char = 'X';
-const char p2Char = 'O';
+//int SIZE = 3;
+int ROWS = 3;
+int COLS = 3;
+int NUM_CELLS = ROWS * COLS;
+int NUM_WIN = 3;
+char p1Char = 'X';
+char p2Char = 'O';
+const int P1_TURN = 0;
+const int P2_TURN = 1;
 
 int count_digits(int num) {
     int digits = 0;
@@ -16,6 +20,6 @@ int count_digits(int num) {
     return digits;
 }
 
-const int CELL_DIGITS = count_digits(NUM_CELLS);
+int CELL_DIGITS = count_digits(NUM_CELLS);
 
 #endif

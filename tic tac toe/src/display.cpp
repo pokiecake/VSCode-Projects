@@ -3,8 +3,10 @@
 #include <iomanip>
 
 void print_start_screen() {
+    print_dividers();
     std::cout << std::setw(20) << std::right << "Tic Tac Toe!\n";
     std::cout << std::setw(26) << std::right << "Enter 'start' to begin.\n";
+    std::cout << std::setw(26) << std::right << "Enter 'options' to customize.\n";
     std :: cout << "\n";
 }
 
@@ -20,9 +22,9 @@ void print_cell(char * board, int pos) {
 }
 
 void print_row(char * board, int row) {
-    for (int i = 0; i < SIZE; ++i) {
-        print_cell(board, row * SIZE + i);
-        if (i == SIZE - 1) {
+    for (int i = 0; i < COLS; ++i) {
+        print_cell(board, row * COLS + i);
+        if (i == COLS - 1) {
             std::cout << "\n";
         } else {
             std::cout << " | ";
@@ -31,13 +33,13 @@ void print_row(char * board, int row) {
 }
 
 void print_horiz_dividers() {
-    std::cout << std::setw((CELL_DIGITS + 3) * SIZE) << std::right << std::setfill('-') << "\n";
+    std::cout << std::setw((CELL_DIGITS + 3) * COLS) << std::right << std::setfill('-') << "\n";
 }
 
 void print_board(char * board) {
-    for (int i = 0; i < SIZE; ++i) {
+    for (int i = 0; i < ROWS; ++i) {
         print_row(board, i);
-        if (i < SIZE - 1) {
+        if (i < ROWS - 1) {
             print_horiz_dividers();
         }
     }
